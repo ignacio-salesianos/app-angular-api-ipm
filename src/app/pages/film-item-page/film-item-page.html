@@ -1,0 +1,12 @@
+@if (film(); as f) {
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">{{ f.title }}</h3>
+      <h6 class="card-subtitle mb-3 text-body-secondary">Episodio {{ f.episode_id }}</h6>
+      <p><strong>Director:</strong> {{ f.director }}</p>
+      <p><strong>Productor:</strong> {{ f.producer }}</p>
+      <p><strong>Estreno:</strong> {{ f.release_date }}</p>
+      <p class="fst-italic">{{ f.opening_crawl }}</p>
+    </div>
+  </div>
+}

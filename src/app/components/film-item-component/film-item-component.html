@@ -1,0 +1,9 @@
+<section class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title">{{ film()?.title }}</h5>
+    <p class="card-text mb-1"><strong>Episodio:</strong> {{ film()?.episode_id }}</p>
+    <p class="card-text mb-1"><strong>Director:</strong> {{ film()?.director }}</p>
+    <p class="card-text"><strong>Estreno:</strong> {{ film()?.release_date }}</p>
+    <a class="btn btn-primary" [routerLink]="['/film', getFilmId()]">Ver detalle</a>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ vehicle?.name }}</h4>
+</div>
+
+<div class="modal-body">
+  @if (vehicle) {
+    <p><strong>Modelo:</strong> {{ vehicle.model }}</p>
+    <p><strong>Fabricante:</strong> {{ vehicle.manufacturer }}</p>
+    <p><strong>Precio:</strong> {{ vehicle.cost_in_credits }} créditos</p>
+    <p><strong>Velocidad máx.:</strong> {{ vehicle.max_atmosphering_speed }}</p>
+    <p><strong>Tripulación:</strong> {{ vehicle.crew }}</p>
+    <p><strong>Pasajeros:</strong> {{ vehicle.passengers }}</p>
+  }
+</div>

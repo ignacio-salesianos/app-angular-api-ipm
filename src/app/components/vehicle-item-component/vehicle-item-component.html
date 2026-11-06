@@ -1,0 +1,9 @@
+<section class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title">{{ vehicle()?.name }}</h5>
+    <p class="card-text mb-1"><strong>Modelo:</strong> {{ vehicle()?.model }}</p>
+    <p class="card-text mb-1"><strong>Fabricante:</strong> {{ vehicle()?.manufacturer }}</p>
+    <p class="card-text"><strong>Clase:</strong> {{ vehicle()?.vehicle_class }}</p>
+    <button type="button" class="btn btn-primary" (click)="emitVehicleClicked()">Ver detalle</button>
+  </div>
+</section>
